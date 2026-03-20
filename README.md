@@ -1,28 +1,44 @@
-# 🌐 Web Scraper Python
+# Web Scraper Python
 
-Projeto simples que coleta títulos de notícias de um site utilizando Python.
+Command-line web scraper that collects the latest Hacker News titles with Python.
 
-## Tecnologias
+## Highlights
+
+- Uses `requests` and `BeautifulSoup`
+- Timeout and error handling for network failures
+- Plain text and JSON output modes
+- Simple CLI with configurable result limit
+
+## Stack
 
 - Python
 - Requests
-- BeautifulSoup
+- Beautiful Soup
 
-## Como executar
+## Install
 
-Instale as bibliotecas:
-
-```
-pip install requests
-pip install beautifulsoup4
+```bash
+pip install -r requirements.txt
 ```
 
-Execute:
+## Run locally
 
-```
+```bash
 python scraper.py
 ```
 
-## Autor
+Fetch a shorter list:
 
-Douglas Aparecido da Silva
+```bash
+python scraper.py --limit 5
+```
+
+Output JSON:
+
+```bash
+python scraper.py --json
+```
+
+## Author
+
+Douglas Aparecido Silva
